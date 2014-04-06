@@ -1,0 +1,21 @@
+{
+    "name": "Dropbox Links",
+    "version": "1.0",
+    "manifest_version": 2,
+    "incognito": "split",
+    "browser_action": {
+        "default_icon": "images/icon_16.png",
+        "default_title": "Dropbox Links",
+        "default_popup": "popup/links_popup.html"
+    },
+    "background": {
+        "page": "background.html",
+        "persistent": true
+    },
+    "permissions": [
+        "tabs", "storage"
+    ],
+    "web_accessible_resources": [
+        "lib/dropbox_oauth_receiver.html"
+    ]
+}
